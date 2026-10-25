@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Task A – Food and Nutrition Calculator | Hind Marzouq Alahbabi Health and Wellbeing Learning E-Portfolio</title>
+<meta name="description" content="AI Task A: a home-cooked meal of chicken, rice and salad analysed with Google Gemini and checked against healthy eating guidance.">
+<meta name="author" content="Hind Marzouq Alahbabi">
+<meta name="theme-color" content="#eef5e6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%233f9b4c' stroke-width='8'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23ee7a50'/%3E%3C/svg%3E">
+<script>document.documentElement.className += " js";</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="scroll-bar" aria-hidden="true"><i></i></div>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="wordmark" href="index.html"><span class="wm-logo" aria-hidden="true"><svg class="ring" viewBox="0 0 400 400" aria-hidden="true" focusable="false"><path class="seg walk" style="animation:none" d="M204.54 0.05A200 200 0 0 1 282.67 17.88L244.64 101.66A108 108 0 0 0 202.45 92.03Z"/><path class="seg strength" style="animation:none" d="M290.84 21.82A200 200 0 0 1 353.50 71.79L282.89 130.76A108 108 0 0 0 249.05 103.78Z"/><path class="seg rest" style="animation:none" d="M359.16 78.88A200 200 0 0 1 393.93 151.08L304.72 173.59A108 108 0 0 0 285.94 134.60Z"/><path class="seg walk" style="animation:none" d="M395.95 159.93A200 200 0 0 1 395.95 240.07L305.81 221.64A108 108 0 0 0 305.81 178.36Z"/><path class="seg strength" style="animation:none" d="M393.93 248.92A200 200 0 0 1 359.16 321.12L285.94 265.40A108 108 0 0 0 304.72 226.41Z"/><path class="seg walk" style="animation:none" d="M353.50 328.21A200 200 0 0 1 290.84 378.18L249.05 296.22A108 108 0 0 0 282.89 269.24Z"/><path class="seg rest" style="animation:none" d="M282.67 382.12A200 200 0 0 1 204.54 399.95L202.45 307.97A108 108 0 0 0 244.64 298.34Z"/><path class="seg walk" style="animation:none" d="M195.46 399.95A200 200 0 0 1 117.33 382.12L155.36 298.34A108 108 0 0 0 197.55 307.97Z"/><path class="seg strength" style="animation:none" d="M109.16 378.18A200 200 0 0 1 46.50 328.21L117.11 269.24A108 108 0 0 0 150.95 296.22Z"/><path class="seg rest" style="animation:none" d="M40.84 321.12A200 200 0 0 1 6.07 248.92L95.28 226.41A108 108 0 0 0 114.06 265.40Z"/><path class="seg walk" style="animation:none" d="M4.05 240.07A200 200 0 0 1 4.05 159.93L94.19 178.36A108 108 0 0 0 94.19 221.64Z"/><path class="seg strength" style="animation:none" d="M6.07 151.08A200 200 0 0 1 40.84 78.88L114.06 134.60A108 108 0 0 0 95.28 173.59Z"/><path class="seg walk" style="animation:none" d="M46.50 71.79A200 200 0 0 1 109.16 21.82L150.95 103.78A108 108 0 0 0 117.11 130.76Z"/><path class="seg rest" style="animation:none" d="M117.33 17.88A200 200 0 0 1 195.46 0.05L197.55 92.03A108 108 0 0 0 155.36 101.66Z"/></svg></span><span class="wm-text"><b>Wellbeing Portfolio</b><small>Hind Marzouq Alahbabi</small></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6l2 2 3-3M4 14l2 2 3-3M12 7h8M12 15h8"/></svg><span>Menu</span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <i class="nav-ind" aria-hidden="true"></i>
+      <a href="index.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Home</span></a>
+      <a href="goals.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg><span>SMART Goals</span></a>
+      <a href="plan.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>2-Week Plan</span></a>
+      <a href="task-a.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 8c-2.5-2.5-7-1-7 4 0 5 3 9 7 9s7-4 7-9c0-5-4.5-6.5-7-4z"/><path d="M12 8c0-2 1-3.5 3-4.5"/></svg><span>AI Task A</span></a>
+      <a href="task-b.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><span>AI Task B</span></a>
+      <a href="reflection.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Reflection</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" aria-labelledby="page-title">
+  <div class="blobs" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+  <div class="wrap">
+    <div class="ph-text">
+      <p class="kicker">Health &amp; Wellbeing · E-portfolio</p>
+      <h1 id="page-title"><span class="w" style="--w:0">Food</span> <span class="w" style="--w:1">and</span> <span class="w accent" style="--w:2">Nutrition</span> <span class="w" style="--w:3">Calculator</span></h1>
+      <p class="lead">AI Task A: a home-cooked meal analysed with Google Gemini, then checked against recognised healthy eating guidance.</p>
+      <ul class="chips"><li class="g"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>Google Gemini</li><li class="b"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v8a2 2 0 004 0V3M8 11v10M17 3c-2.5 2-2.5 7 0 9v9M17 3v9"/></svg>Chicken, rice and salad</li><li class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5 9-10"/></svg>Accuracy checked</li></ul>
+    </div>
+    <div class="shape" aria-hidden="true"><div class="shape-in"><svg viewBox="0 0 400 400" aria-hidden="true" focusable="false"><defs><linearGradient id="bw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3efd6"/></linearGradient><radialGradient id="tm" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ff9a85"/><stop offset="1" stop-color="#e2492f"/></radialGradient><linearGradient id="ck" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6c98a"/><stop offset="1" stop-color="#d9893f"/></linearGradient></defs><ellipse cx="200" cy="364" rx="128" ry="14" fill="#1f2d24" opacity=".14"/><path d="M30 196H370C370 296 298 358 200 358C102 358 30 296 30 196Z" fill="url(#bw)"/><path d="M62 262c46 32 230 32 276 0" fill="none" stroke="#ee7a50" stroke-width="10" stroke-linecap="round" opacity=".55"/><ellipse cx="200" cy="196" rx="170" ry="38" fill="#f4ecd9"/><g fill="#fffdf6"><ellipse cx="110" cy="186" rx="60" ry="20"/><ellipse cx="160" cy="194" rx="50" ry="16"/></g><g class="bob b1"><ellipse cx="300" cy="166" rx="48" ry="19" transform="rotate(26 300 166)" fill="#4a9e3f"/><ellipse cx="268" cy="150" rx="40" ry="16" transform="rotate(-10 268 150)" fill="#7cc35a"/><ellipse cx="86" cy="164" rx="42" ry="16" transform="rotate(-24 86 164)" fill="#4a9e3f"/></g><g class="bob b2"><circle cx="236" cy="168" r="30" fill="url(#tm)"/><circle cx="226" cy="158" r="7" fill="#fff" opacity=".55"/></g><g class="bob b3"><path d="M120 150c20-40 90-44 110-10 10 18-6 36-40 38-40 2-80-6-70-28z" fill="url(#ck)"/><path d="M140 150l60-12M150 162l60-10" stroke="#b86a2c" stroke-width="5" stroke-linecap="round" opacity=".6"/></g><g class="bob b4"><circle cx="318" cy="120" r="26" fill="#cfe9a8"/><circle cx="318" cy="120" r="19" fill="none" stroke="#8cc63f" stroke-width="3"/><circle cx="312" cy="116" r="3" fill="#8cc63f"/><circle cx="324" cy="124" r="3" fill="#8cc63f"/></g></svg></div></div>
+  </div>
+</section>
+<section class="section " id="tool" aria-labelledby="tool-h">
+  <div class="wrap">
+    <h2 id="tool-h" data-reveal>AI tool and meal <span class="accent">recorded</span></h2>
+    <div class="cols">
+      <div class="c-6 prose"><p data-reveal>I used <strong>Google Gemini</strong> to estimate the nutritional content of a home-cooked meal containing chicken, rice, and a mixed vegetable salad.</p>
+    <p data-reveal>The meal included a medium piece of chicken, approximately one cup of cooked rice (150–160 g), and a small salad containing cucumber, tomato, and lettuce. These were household estimates rather than weighed measurements. The exact chicken weight, preparation method, cooking oil, dressing, and added salt were not recorded.</p>
+    <p data-reveal>I asked Gemini to estimate calories and key nutrients, explain uncertainty, evaluate the meal, suggest practical improvements, and identify the limitations of analysing one meal.</p>
+        <ul class="chips" data-reveal><li class="g"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v8a2 2 0 004 0V3M8 11v10M17 3c-2.5 2-2.5 7 0 9v9M17 3v9"/></svg>Medium piece of chicken</li><li class="b"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v8a2 2 0 004 0V3M8 11v10M17 3c-2.5 2-2.5 7 0 9v9M17 3v9"/></svg>About one cup of cooked rice</li><li class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v8a2 2 0 004 0V3M8 11v10M17 3c-2.5 2-2.5 7 0 9v9M17 3v9"/></svg>Small mixed salad</li></ul>
+      </div>
+      <div class="c-6"><figure class="shot-fig " data-reveal="zoom">
+      <button class="zoom" type="button" data-full="task-a-1-input.png" aria-label="Enlarge Figure A1"><img src="task-a-1-input.png" width="1908" height="927" loading="lazy" alt="Figure A1: Meal input and analysis request. The meal description, approximate portions, missing preparation details, and questions entered into Google Gemini."><span class="zoom-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6M11 8v6"/></svg></span></button>
+      <figcaption><b>Figure A1.</b> Meal input and analysis request. The meal description, approximate portions, missing preparation details, and questions entered into Google Gemini.</figcaption>
+    </figure></div>
+    </div>
+  </div>
+</section>
+<section class="section " id="results" aria-labelledby="results-h">
+  <div class="wrap">
+    <h2 id="results-h" data-reveal>AI-generated <span class="accent">results</span></h2>
+    <p data-reveal>The following table reproduces Gemini’s estimates. The ranges are the tool’s estimates of preparation-related variation, not measured values or verified limits.</p>
+    <div class="table-wrap" data-reveal><table class="stack-m"><thead><tr><th scope="col">Nutrient</th><th scope="col" class="num">Chicken</th><th scope="col" class="num">Rice</th><th scope="col" class="num">Mixed salad</th><th scope="col" class="num">Total meal</th></tr></thead><tbody><tr><td data-label="Nutrient">Energy</td><td class="num" data-label="Chicken">195 kcal</td><td class="num" data-label="Rice">200 kcal</td><td class="num" data-label="Mixed salad">15 kcal</td><td class="num" data-label="Total meal">410 kcal</td></tr><tr><td data-label="Nutrient">Carbohydrates</td><td class="num" data-label="Chicken">0 g</td><td class="num" data-label="Rice">44 g</td><td class="num" data-label="Mixed salad">3 g</td><td class="num" data-label="Total meal">47 g</td></tr><tr><td data-label="Nutrient">Protein</td><td class="num" data-label="Chicken">37 g</td><td class="num" data-label="Rice">4.2 g</td><td class="num" data-label="Mixed salad">0.7 g</td><td class="num" data-label="Total meal">41.9 g</td></tr><tr><td data-label="Nutrient">Total fat</td><td class="num" data-label="Chicken">4.3 g</td><td class="num" data-label="Rice">0.4 g</td><td class="num" data-label="Mixed salad">0.2 g</td><td class="num" data-label="Total meal">4.9 g</td></tr><tr><td data-label="Nutrient">Fibre</td><td class="num" data-label="Chicken">0 g</td><td class="num" data-label="Rice">0.6 g</td><td class="num" data-label="Mixed salad">1 g</td><td class="num" data-label="Total meal">1.6 g</td></tr><tr><td data-label="Nutrient">Total sugar</td><td class="num" data-label="Chicken">0 g</td><td class="num" data-label="Rice">0.1 g</td><td class="num" data-label="Mixed salad">1.8 g</td><td class="num" data-label="Total meal">1.9 g</td></tr><tr><td data-label="Nutrient">Sodium</td><td class="num" data-label="Chicken">85 mg</td><td class="num" data-label="Rice">2 mg</td><td class="num" data-label="Mixed salad">10 mg</td><td class="num" data-label="Total meal">97 mg</td></tr></tbody></table></div>
+    <div class="ranges">
+      <div class="range" data-reveal="zoom"><span>Energy</span><b>395–530</b><small>kcal</small></div>
+      <div class="range" data-reveal="zoom"><span>Total fat</span><b>4.9–18.4</b><small>g</small></div>
+      <div class="range" data-reveal="zoom"><span>Sodium</span><b>97–850</b><small>mg</small></div>
+    </div>
+    <p class="table-note" data-reveal>Gemini reported these possible total ranges for energy, fat and sodium.</p>
+    <p data-reveal>For its calculation, the tool treated the chicken as approximately 120 g of cooked, skinless chicken breast, the rice as 155 g cooked, and the salad as approximately 75 g. These were calculation choices made by the tool, rather than details I had measured.</p>
+    <figure class="shot-fig wide" data-reveal="zoom">
+      <button class="zoom" type="button" data-full="task-a-2-estimates.png" aria-label="Enlarge Figure A2"><img src="task-a-2-estimates.png" width="1671" height="874" loading="lazy" alt="Figure A2: Nutrient estimates and calculation details. The estimated nutrient table, totals, ranges, and the beginning of the explanation of uncertainty."><span class="zoom-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6M11 8v6"/></svg></span></button>
+      <figcaption><b>Figure A2.</b> Nutrient estimates and calculation details. The estimated nutrient table, totals, ranges, and the beginning of the explanation of uncertainty.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="section " id="evaluation" aria-labelledby="evaluation-h">
+  <div class="wrap">
+    <h2 id="evaluation-h" data-reveal>My evaluation and <span class="accent">accuracy check</span></h2>
+    <div class="cols">
+      <div class="c-7 prose"><p data-reveal>The individual baseline figures add up to the totals shown. However, correct addition does not establish that the food estimates match my actual meal. Different chicken cuts, portion sizes, and preparation methods could change the results.</p>
+    <p data-reveal>The meal contains a substantial estimated amount of protein and a carbohydrate source. It also includes vegetables, although the estimated fibre content is limited. Choosing wholegrain rice and increasing the vegetable portion would improve its variety and fibre contribution, consistent with the NHS Eatwell Guide.</p>
+    <p data-reveal>I identified two issues in the AI response:</p>
+        <div class="issues">
+          <div class="info-card p" data-reveal="zoom"><span class="chip-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg></span><h3>Guideline attribution</h3><p>Gemini presented a 50% fruit-and-vegetable, 25% carbohydrate, and 25% protein division as consistent with the NHS Eatwell Guide. This is not the NHS guide’s division. NHS recommends that fruit and vegetables and starchy carbohydrates each make up just over a third of overall intake. It also explains that balance can be achieved across a day or week rather than at every meal.</p></div>
+          <div class="info-card y" data-reveal="zoom"><span class="chip-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg></span><h3>Incomplete treatment of cooking oil</h3><p>Gemini explained that oil could increase the rice’s calories and fat, but its table kept both rice values fixed. Its total ranges therefore do not consistently cover all the preparation variations described.</p></div>
+        </div>
+        <p data-reveal>Gemini mentioned USDA FoodData Central, but the screenshots do not identify the exact database entries used. I therefore treat the figures as approximate AI estimates rather than independently verified nutrient values. I also would not conclude that a single-meal sodium threshold was exceeded without a defined benchmark and reliable preparation details.</p>
+      </div>
+      <div class="c-5"><figure class="shot-fig " data-reveal="zoom">
+      <button class="zoom" type="button" data-full="task-a-3-evaluation.png" aria-label="Enlarge Figure A3"><img src="task-a-3-evaluation.png" width="742" height="920" loading="lazy" alt="Figure A3: AI evaluation of the meal. Further calculation details, the tool’s guideline comparison, strengths, and possible imbalances. The guideline attribution is critically reviewed here."><span class="zoom-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6M11 8v6"/></svg></span></button>
+      <figcaption><b>Figure A3.</b> AI evaluation of the meal. Further calculation details, the tool’s guideline comparison, strengths, and possible imbalances. The guideline attribution is critically reviewed here.</figcaption>
+    </figure></div>
+    </div>
+  </div>
+</section>
+<section class="section " id="improvements" aria-labelledby="improvements-h">
+  <div class="wrap">
+    <h2 id="improvements-h" data-reveal>Practical <span class="accent">improvements</span></h2>
+    <div class="cols">
+      <div class="c-7"><ol class="steps">
+        <li data-reveal><span class="step-n">1</span><div><b>More fibre</b><p>Replace some or all of the white rice with brown rice, or add beans or lentils for more fibre.</p></div></li>
+        <li data-reveal><span class="step-n">2</span><div><b>More vegetables</b><p>Increase the salad portion or add cooked vegetables.</p></div></li>
+        <li data-reveal><span class="step-n">3</span><div><b>Better records</b><p>Record cooking oil, dressing, and salt more carefully next time. Use measured amounts rather than relying on visual estimates.</p></div></li>
+      </ol></div>
+      <div class="c-5"><figure class="shot-fig " data-reveal="zoom">
+      <button class="zoom" type="button" data-full="task-a-4-improvements.png" aria-label="Enlarge Figure A4"><img src="task-a-4-improvements.png" width="685" height="926" loading="lazy" alt="Figure A4: Suggested improvements and limitations. Gemini’s practical suggestions and explanation of why one meal cannot establish overall dietary quality."><span class="zoom-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6M11 8v6"/></svg></span></button>
+      <figcaption><b>Figure A4.</b> Suggested improvements and limitations. Gemini’s practical suggestions and explanation of why one meal cannot establish overall dietary quality.</figcaption>
+    </figure></div>
+    </div>
+  </div>
+</section>
+<section class="section " id="reflection" aria-labelledby="reflection-h">
+  <div class="wrap">
+    <h2 id="reflection-h" data-reveal><span class="accent">Reflection</span></h2>
+    <div class="quote-panel prose" data-reveal><p>This activity helped me look beyond whether a meal simply contains chicken, rice, and salad. Gemini estimated about 410 calories and 41.9 g of protein, but only 1.6 g of fibre. The fibre estimate made me consider the size of my salad and my choice of rice, rather than focusing only on calories.</p><p>I also learned that a detailed AI table can still contain weaknesses. The response mixed up healthy eating models and did not consistently include cooking oil in its rice estimates. This showed me why checking the explanation matters as much as reading the total.</p><p>My next steps are to increase the vegetable portion, try brown rice or add pulses, and record preparation details more carefully. These changes fit my goal of building balanced home-cooked meals without replacing familiar foods completely.</p><p>I cannot judge my whole diet from this meal. Other meals and snacks also contribute nutrients throughout the day. I would use AI as a starting point for reviewing food choices, while checking guidance and treating estimates cautiously when portions and ingredients are uncertain.</p></div>
+  </div>
+</section>
+<nav class="pager wrap" aria-label="Previous and next page">
+  <a class="btn btn-soft" href="plan.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Fitness and Meal Plan</span></a>
+  <a class="btn" href="task-b.html"><span>AI Task B</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+</main>
+<footer class="band-field">
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 40C180 90 360 0 540 30S900 90 1080 50 1320 0 1440 30V0H0Z"/></svg>
+  <div class="foot-ring ring" aria-hidden="true"><svg class="ring-svg" viewBox="-12 -12 424 424" role="presentation" focusable="false"><path class="seg walk" style="--i:0" d="M204.31 10.05A190 190 0 0 1 278.53 26.99L241.33 108.94A100 100 0 0 0 202.27 100.03Z"/><path class="seg strength" style="--i:1" d="M286.30 30.73A190 190 0 0 1 345.82 78.20L276.75 135.89A100 100 0 0 0 245.42 110.91Z"/><path class="seg rest" style="--i:2" d="M351.20 84.94A190 190 0 0 1 384.23 153.53L296.96 175.54A100 100 0 0 0 279.58 139.44Z"/><path class="seg walk" style="--i:3" d="M386.15 161.93A190 190 0 0 1 386.15 238.07L297.97 220.03A100 100 0 0 0 297.97 179.97Z"/><path class="seg strength" style="--i:4" d="M384.23 246.47A190 190 0 0 1 351.20 315.06L279.58 260.56A100 100 0 0 0 296.96 224.46Z"/><path class="seg walk" style="--i:5" d="M345.82 321.80A190 190 0 0 1 286.30 369.27L245.42 289.09A100 100 0 0 0 276.75 264.11Z"/><path class="seg rest" style="--i:6" d="M278.53 373.01A190 190 0 0 1 204.31 389.95L202.27 299.97A100 100 0 0 0 241.33 291.06Z"/><path class="seg walk" style="--i:7" d="M195.69 389.95A190 190 0 0 1 121.47 373.01L158.67 291.06A100 100 0 0 0 197.73 299.97Z"/><path class="seg strength" style="--i:8" d="M113.70 369.27A190 190 0 0 1 54.18 321.80L123.25 264.11A100 100 0 0 0 154.58 289.09Z"/><path class="seg rest" style="--i:9" d="M48.80 315.06A190 190 0 0 1 15.77 246.47L103.04 224.46A100 100 0 0 0 120.42 260.56Z"/><path class="seg walk" style="--i:10" d="M13.85 238.07A190 190 0 0 1 13.85 161.93L102.03 179.97A100 100 0 0 0 102.03 220.03Z"/><path class="seg strength" style="--i:11" d="M15.77 153.53A190 190 0 0 1 48.80 84.94L120.42 139.44A100 100 0 0 0 103.04 175.54Z"/><path class="seg walk" style="--i:12" d="M54.18 78.20A190 190 0 0 1 113.70 30.73L154.58 110.91A100 100 0 0 0 123.25 135.89Z"/><path class="seg rest" style="--i:13" d="M121.47 26.99A190 190 0 0 1 195.69 10.05L197.73 100.03A100 100 0 0 0 158.67 108.94Z"/></svg></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <p class="foot-mark">Walk, eat well, breathe and <em>reflect.</em></p>
+      <ul class="foot-links">
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="goals.html">SMART Goals</a></li>
+        <li><a href="plan.html">Fitness and Meal Plan</a></li>
+        <li><a href="task-a.html">AI Task A</a></li>
+        <li><a href="task-b.html">AI Task B</a></li>
+        <li><a href="reflection.html">Final Reflection</a></li>
+        <li><a href="reflection.html#references">References</a></li>
+      </ul>
+    </div>
+    <div class="foot-base">
+      <p>Hind Marzouq Alahbabi Health and Wellbeing Learning E-Portfolio</p>
+      <p>Interactive Learning Hub</p>
+      <a class="to-top" href="#main" aria-label="Back to top"><svg class="ic up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</footer>
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged screenshot"><button class="lb-close" type="button" aria-label="Close">&times;</button><img alt=""><p class="lb-cap"></p></dialog>
+<script src="main.js" defer></script>
+</body>
+</html>

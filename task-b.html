@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Task B – Fitness Plan and BMI | Hind Marzouq Alahbabi Health and Wellbeing Learning E-Portfolio</title>
+<meta name="description" content="AI Task B: BMI calculated and interpreted with Google Gemini, current activity assessed, and a personalised two-week fitness plan.">
+<meta name="author" content="Hind Marzouq Alahbabi">
+<meta name="theme-color" content="#eef5e6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%233f9b4c' stroke-width='8'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23ee7a50'/%3E%3C/svg%3E">
+<script>document.documentElement.className += " js";</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="scroll-bar" aria-hidden="true"><i></i></div>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="wordmark" href="index.html"><span class="wm-logo" aria-hidden="true"><svg class="ring" viewBox="0 0 400 400" aria-hidden="true" focusable="false"><path class="seg walk" style="animation:none" d="M204.54 0.05A200 200 0 0 1 282.67 17.88L244.64 101.66A108 108 0 0 0 202.45 92.03Z"/><path class="seg strength" style="animation:none" d="M290.84 21.82A200 200 0 0 1 353.50 71.79L282.89 130.76A108 108 0 0 0 249.05 103.78Z"/><path class="seg rest" style="animation:none" d="M359.16 78.88A200 200 0 0 1 393.93 151.08L304.72 173.59A108 108 0 0 0 285.94 134.60Z"/><path class="seg walk" style="animation:none" d="M395.95 159.93A200 200 0 0 1 395.95 240.07L305.81 221.64A108 108 0 0 0 305.81 178.36Z"/><path class="seg strength" style="animation:none" d="M393.93 248.92A200 200 0 0 1 359.16 321.12L285.94 265.40A108 108 0 0 0 304.72 226.41Z"/><path class="seg walk" style="animation:none" d="M353.50 328.21A200 200 0 0 1 290.84 378.18L249.05 296.22A108 108 0 0 0 282.89 269.24Z"/><path class="seg rest" style="animation:none" d="M282.67 382.12A200 200 0 0 1 204.54 399.95L202.45 307.97A108 108 0 0 0 244.64 298.34Z"/><path class="seg walk" style="animation:none" d="M195.46 399.95A200 200 0 0 1 117.33 382.12L155.36 298.34A108 108 0 0 0 197.55 307.97Z"/><path class="seg strength" style="animation:none" d="M109.16 378.18A200 200 0 0 1 46.50 328.21L117.11 269.24A108 108 0 0 0 150.95 296.22Z"/><path class="seg rest" style="animation:none" d="M40.84 321.12A200 200 0 0 1 6.07 248.92L95.28 226.41A108 108 0 0 0 114.06 265.40Z"/><path class="seg walk" style="animation:none" d="M4.05 240.07A200 200 0 0 1 4.05 159.93L94.19 178.36A108 108 0 0 0 94.19 221.64Z"/><path class="seg strength" style="animation:none" d="M6.07 151.08A200 200 0 0 1 40.84 78.88L114.06 134.60A108 108 0 0 0 95.28 173.59Z"/><path class="seg walk" style="animation:none" d="M46.50 71.79A200 200 0 0 1 109.16 21.82L150.95 103.78A108 108 0 0 0 117.11 130.76Z"/><path class="seg rest" style="animation:none" d="M117.33 17.88A200 200 0 0 1 195.46 0.05L197.55 92.03A108 108 0 0 0 155.36 101.66Z"/></svg></span><span class="wm-text"><b>Wellbeing Portfolio</b><small>Hind Marzouq Alahbabi</small></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6l2 2 3-3M4 14l2 2 3-3M12 7h8M12 15h8"/></svg><span>Menu</span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <i class="nav-ind" aria-hidden="true"></i>
+      <a href="index.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Home</span></a>
+      <a href="goals.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg><span>SMART Goals</span></a>
+      <a href="plan.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>2-Week Plan</span></a>
+      <a href="task-a.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 8c-2.5-2.5-7-1-7 4 0 5 3 9 7 9s7-4 7-9c0-5-4.5-6.5-7-4z"/><path d="M12 8c0-2 1-3.5 3-4.5"/></svg><span>AI Task A</span></a>
+      <a href="task-b.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><span>AI Task B</span></a>
+      <a href="reflection.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><span>Reflection</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" aria-labelledby="page-title">
+  <div class="blobs" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+  <div class="wrap">
+    <div class="ph-text">
+      <p class="kicker">Health &amp; Wellbeing · E-portfolio</p>
+      <h1 id="page-title"><span class="w" style="--w:0">Fitness</span> <span class="w" style="--w:1">Plan</span> <span class="w" style="--w:2">and</span> <span class="w accent" style="--w:3">BMI</span></h1>
+      <p class="lead">AI Task B: my BMI calculated and interpreted with Google Gemini, then turned into a personalised beginner fitness plan.</p>
+      <ul class="chips"><li class="g"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>Google Gemini</li><li class="b"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>BMI 25.1 kg/m²</li><li class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13" cy="4" r="2"/><path d="M10 21l2-6 3 3v3M9 12l2-5 4 2 2 3M11 7l-3 3"/></svg>Walking and home strength</li></ul>
+    </div>
+    <div class="shape" aria-hidden="true"><div class="shape-in"><svg viewBox="0 60 400 240" aria-hidden="true" focusable="false"><path d="M0.00 280.00A200 200 0 0 1 17.29 198.65L94.03 232.82A116 116 0 0 0 84.00 280.00Z" fill="#8fd0b0"/><path d="M20.86 191.07A200 200 0 0 1 134.23 91.12L161.85 170.45A116 116 0 0 0 96.10 228.42Z" fill="#3f9b4c"/><path d="M142.19 88.54A200 200 0 0 1 257.81 88.54L233.53 168.95A116 116 0 0 0 166.47 168.95Z" fill="#f5b942"/><path d="M265.77 91.12A200 200 0 0 1 400.00 280.00L316.00 280.00A116 116 0 0 0 238.15 170.45Z" fill="#ee7a50"/><g class="needle"><path d="M200 280L164.36 165.42" stroke="#1f2d24" stroke-width="9" stroke-linecap="round"/></g><circle cx="200" cy="280" r="28" fill="#1f2d24"/><circle cx="200" cy="280" r="10" fill="#f5b942"/></svg></div></div>
+  </div>
+</section>
+<section class="section " id="profile" aria-labelledby="profile-h">
+  <div class="wrap">
+    <h2 id="profile-h" data-reveal>AI tool and personal <span class="accent">information</span></h2>
+    <div class="cols">
+      <div class="c-6"><p data-reveal>I used <strong>Google Gemini</strong> to calculate my BMI, review my current activity, and develop a beginner fitness plan.</p>
+        <div class="table-wrap" data-reveal><table class="stack-m"><thead><tr><th scope="col">Information</th><th scope="col">My details</th></tr></thead><tbody><tr><td data-label="Information">Age</td><td data-label="My details">18 years</td></tr><tr><td data-label="Information">Height</td><td data-label="My details">161 cm</td></tr><tr><td data-label="Information">Weight</td><td data-label="My details">65 kg</td></tr><tr><td data-label="Information">Current activity</td><td data-label="My details">Walking during my university routine, without a structured exercise programme</td></tr><tr><td data-label="Information">Activity measurements</td><td data-label="My details">Walking duration, pace, and weekly exercise minutes have not been measured</td></tr><tr><td data-label="Information">Preferred activities</td><td data-label="My details">Walking and simple home exercises</td></tr><tr><td data-label="Information">Injuries</td><td data-label="My details">None reported</td></tr><tr><td data-label="Information">Main aim</td><td data-label="My details">Improve fitness and consistency</td></tr></tbody></table></div></div>
+      <div class="c-6"><figure class="shot-fig " data-reveal="zoom">
+      <button class="zoom" type="button" data-full="task-b-1-input.png" aria-label="Enlarge Figure B1"><img src="task-b-1-input.png" width="529" height="896" loading="lazy" alt="Figure B1: Personal information and analysis request. The revised prompt, including age, height, weight, current activity, and the requested assessment."><span class="zoom-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6M11 8v6"/></svg></span></button>
+      <figcaption><b>Figure B1.</b> Personal information and analysis request. The revised prompt, including age, height, weight, current activity, and the requested assessment.</figcaption>
+    </figure></div>
+    </div>
+  </div>
+</section>
+<section class="section " id="bmi" aria-labelledby="bmi-h">
+  <div class="wrap">
+    <h2 id="bmi-h" data-reveal>BMI calculation and <span class="accent">interpretation</span></h2>
+    <div class="cols">
+      <div class="c-7">
+        <div class="calc" data-reveal="zoom">
+          <p class="calc-row"><span>Height in metres</span><b>161 ÷ 100 = 1.61 m</b></p>
+          <p class="calc-row"><span>BMI = weight ÷ height²</span><b>65 ÷ (1.61 × 1.61) = <em data-count="25.1" data-dec="1">25.1</em> kg/m²</b></p>
+          <div class="calc-gauge" aria-hidden="true"><svg viewBox="0 60 400 240" aria-hidden="true" focusable="false"><path d="M0.00 280.00A200 200 0 0 1 17.29 198.65L94.03 232.82A116 116 0 0 0 84.00 280.00Z" fill="#8fd0b0"/><path d="M20.86 191.07A200 200 0 0 1 134.23 91.12L161.85 170.45A116 116 0 0 0 96.10 228.42Z" fill="#3f9b4c"/><path d="M142.19 88.54A200 200 0 0 1 257.81 88.54L233.53 168.95A116 116 0 0 0 166.47 168.95Z" fill="#f5b942"/><path d="M265.77 91.12A200 200 0 0 1 400.00 280.00L316.00 280.00A116 116 0 0 0 238.15 170.45Z" fill="#ee7a50"/><g class="needle"><path d="M200 280L164.36 165.42" stroke="#1f2d24" stroke-width="9" stroke-linecap="round"/></g><circle cx="200" cy="280" r="28" fill="#1f2d24"/><circle cx="200" cy="280" r="10" fill="#f5b942"/></svg></div>
+          <ul class="gauge-legend"><li><i style="background:#8fd0b0"></i>Under 18.5</li><li><i style="background:#3f9b4c"></i>18.5–24.9</li><li><i style="background:#f5b942"></i>25.0–29.9</li><li><i style="background:#ee7a50"></i>30 and above</li></ul>
+        </div>
+        <div class="prose"><p data-reveal>I checked the calculation, and the result is correct to one decimal place. Using WHO’s adult population framework for ages 18 and over, this value falls just above the overweight threshold of 25.</p>
+    <p data-reveal>However, BMI is a screening indicator rather than a diagnosis or a measure of fitness. It does not distinguish muscle from body fat or show fat distribution. I therefore would not use this result alone to judge my health or set a weight-loss target.</p>
+    <p data-reveal>There was also a source issue in Gemini’s response. It described a WHO interpretation but linked to CDC adult categories, which apply to people aged 20 and over. I used WHO’s adult indicator definition to support the framework stated here instead of treating the two age ranges as interchangeable.</p></div>
+      </div>
+      <div class="c-5"><figure class="shot-fig " data-reveal="zoom">
+      <button class="zoom" type="button" data-full="task-b-2-bmi-plan.png" aria-label="Enlarge Figure B2"><img src="task-b-2-bmi-plan.png" width="540" height="926" loading="lazy" alt="Figure B2: BMI result, activity assessment, and fitness schedule. The calculation, interpretation, limitations, current activity review, and planned weekly activities."><span class="zoom-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6M11 8v6"/></svg></span></button>
+      <figcaption><b>Figure B2.</b> BMI result, activity assessment, and fitness schedule. The calculation, interpretation, limitations, current activity review, and planned weekly activities.</figcaption>
+    </figure></div>
+    </div>
+  </div>
+</section>
+<section class="section " id="activity" aria-labelledby="activity-h">
+  <div class="wrap">
+    <h2 id="activity-h" data-reveal>Assessment of my current <span class="accent">activity</span></h2>
+    <div class="prose"><p data-reveal>Walking during university contributes to my daily movement. However, I have not measured its duration or intensity, so I cannot establish whether I meet weekly activity recommendations.</p>
+    <p data-reveal>Gemini appropriately avoided giving me a measured fitness rating. BMI and my description of daily movement cannot establish my aerobic fitness or strength. My starting point is therefore to record planned activity and review how manageable it feels.</p></div>
+  </div>
+</section>
+<section class="section " id="plan" aria-labelledby="plan-h">
+  <div class="wrap">
+    <h2 id="plan-h" data-reveal>Personalised two-week fitness <span class="accent">plan</span></h2>
+    <p data-reveal>The following schedule applies to both weeks. It matches my walking SMART goal and the detailed fitness plan earlier in this portfolio.</p>
+    <div class="table-wrap" data-reveal><table class="stack-m"><thead><tr><th scope="col">Day</th><th scope="col">Walking</th><th scope="col">Strength or recovery</th></tr></thead><tbody><tr><td data-label="Day">Monday</td><td data-label="Walking">20 minutes at moderate intensity</td><td data-label="Strength or recovery">Gentle cool-down and stretching</td></tr><tr><td data-label="Day">Tuesday</td><td data-label="Walking">20 minutes at moderate intensity</td><td data-label="Strength or recovery">Additional 10–15-minute home strength session</td></tr><tr class="rest-row"><td data-label="Day">Wednesday</td><td data-label="Walking">Usual daily movement only</td><td data-label="Strength or recovery">Recovery; optional gentle stretching</td></tr><tr><td data-label="Day">Thursday</td><td data-label="Walking">20 minutes at moderate intensity</td><td data-label="Strength or recovery">Gentle cool-down and stretching</td></tr><tr><td data-label="Day">Friday</td><td data-label="Walking">20 minutes at moderate intensity</td><td data-label="Strength or recovery">Additional 10–15-minute home strength session</td></tr><tr><td data-label="Day">Saturday</td><td data-label="Walking">20 minutes at moderate intensity</td><td data-label="Strength or recovery">Gentle cool-down and stretching</td></tr><tr class="rest-row"><td data-label="Day">Sunday</td><td data-label="Walking">Usual daily movement only</td><td data-label="Strength or recovery">Recovery and weekly review</td></tr></tbody></table></div>
+    <div class="info-grid">
+      <div class="info-card g" data-reveal="zoom"><span class="chip-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13" cy="4" r="2"/><path d="M10 21l2-6 3 3v3M9 12l2-5 4 2 2 3M11 7l-3 3"/></svg></span><h3>Walking intensity</h3><p>I will choose a pace at which I can talk but would find singing difficult. Each walk will include three additional minutes of easy walking beforehand, two minutes of easy walking afterwards, and three minutes of gentle stretching.</p></div>
+      <div class="info-card p" data-reveal="zoom"><span class="chip-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 7v10M3 10v4M18 7v10M21 10v4M6 12h12"/></svg></span><h3>Strength intensity</h3><p>I will begin at a light-to-moderate effort, prioritising controlled movements and normal breathing. Each 10–15-minute session includes two minutes of gentle marching and shoulder movements beforehand and two minutes of gentle stretching afterwards.</p></div>
+    </div>
+    <div class="table-wrap" data-reveal><table class="stack-m"><thead><tr><th scope="col">Exercise</th><th scope="col">Week 1: each session</th><th scope="col">Week 2: each session, if comfortable</th></tr></thead><tbody><tr><td data-label="Exercise">Chair sit-to-stands</td><td data-label="Week 1: each session">1 set of 8 repetitions</td><td data-label="Week 2: each session, if comfortable">1 set of 10 repetitions</td></tr><tr><td data-label="Exercise">Wall push-ups</td><td data-label="Week 1: each session">1 set of 8 repetitions</td><td data-label="Week 2: each session, if comfortable">1 set of 10 repetitions</td></tr><tr><td data-label="Exercise">Supported calf raises</td><td data-label="Week 1: each session">1 set of 8 repetitions</td><td data-label="Week 2: each session, if comfortable">1 set of 10 repetitions</td></tr><tr><td data-label="Exercise">Glute bridges</td><td data-label="Week 1: each session">1 set of 8 repetitions</td><td data-label="Week 2: each session, if comfortable">1 set of 10 repetitions</td></tr><tr><td data-label="Exercise">Bird-dog</td><td data-label="Week 1: each session">1 set of 5 repetitions per side</td><td data-label="Week 2: each session, if comfortable">1 set of 6 repetitions per side</td></tr></tbody></table></div>
+    <p class="table-note" data-reveal>I will rest for 30–60 seconds between exercises. Progression is optional: I will keep the Week 1 repetitions if the movements are not yet comfortable and controlled. I will stop any exercise that causes pain.</p>
+  </div>
+</section>
+<section class="section " id="justification" aria-labelledby="justification-h">
+  <div class="wrap">
+    <h2 id="justification-h" data-reveal>Justification and guideline <span class="accent">check</span></h2>
+    <div class="cols">
+      <div class="c-7 prose"><p data-reveal>The plan builds on walking that already fits my university routine. Short home sessions introduce strength exercises without requiring a gym. Recovery days and optional progression make the plan more manageable while I develop consistency.</p>
+        <div class="meter" data-reveal="zoom" aria-label="100 planned minutes compared with the WHO range of 150 to 300 minutes a week">
+          <div class="meter-top"><span>My planned walking</span><b>100 min / week</b></div>
+          <div class="meter-bar"><i class="m-who" style="left:50%;width:50%"></i><i class="m-me" style="--to:33.3%"></i></div>
+          <div class="meter-scale"><span>0</span><span>150 (WHO minimum)</span><span>300</span></div>
+        </div>
+        <p data-reveal>The planned walks total <strong>100 minutes of moderate activity per week</strong>. WHO recommends <strong>150–300 minutes of moderate aerobic activity weekly</strong>, alongside muscle-strengthening activities involving the major muscle groups on at least two days. My walking target is therefore an initial step towards the aerobic recommendation. The short strength sessions introduce basic movements rather than establish that I have achieved the full strengthening recommendation.</p>
+    <p data-reveal>I will record walking minutes, strength repetitions, and how difficult each session feels. After two weeks, I will review consistency before gradually increasing walking time. I will use cooler times or an indoor location during hot weather and adjust session timing around classes.</p>
+      </div>
+      <div class="c-5"><figure class="shot-fig " data-reveal="zoom">
+      <button class="zoom" type="button" data-full="task-b-3-exercises.png" aria-label="Enlarge Figure B3"><img src="task-b-3-exercises.png" width="584" height="741" loading="lazy" alt="Figure B3: Exercise details, progression, and justification. Sets, repetitions, rest, recovery, progress tracking, guideline comparison, and the sources supplied by Gemini."><span class="zoom-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11h6M11 8v6"/></svg></span></button>
+      <figcaption><b>Figure B3.</b> Exercise details, progression, and justification. Sets, repetitions, rest, recovery, progress tracking, guideline comparison, and the sources supplied by Gemini.</figcaption>
+    </figure></div>
+    </div>
+  </div>
+</section>
+<section class="section " id="my-reflection" aria-labelledby="my-reflection-h">
+  <div class="wrap">
+    <h2 id="my-reflection-h" data-reveal>My <span class="accent">reflection</span></h2>
+    <div class="quote-panel prose" data-reveal><p>This activity helped me separate body size from physical fitness. My BMI calculation was straightforward, but interpreting it required checking which age framework the tool used. The mismatch between the WHO explanation and the CDC link reminded me that a relevant-looking source does not always support the exact claim.</p><p>I found the walking plan practical because it builds on an activity I already do. Recording its duration will give me more useful information than simply describing myself as active. The home exercises also give me a starting point for developing strength.</p><p>My main priority is to follow a manageable routine and review the records honestly. I will not assume that completing this analysis means my fitness has improved. That will require carrying out the plan and assessing my experience over time.</p></div>
+  </div>
+</section>
+<nav class="pager wrap" aria-label="Previous and next page">
+  <a class="btn btn-soft" href="task-a.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>AI Task A</span></a>
+  <a class="btn" href="reflection.html"><span>Final Reflection</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+</main>
+<footer class="band-field">
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 40C180 90 360 0 540 30S900 90 1080 50 1320 0 1440 30V0H0Z"/></svg>
+  <div class="foot-ring ring" aria-hidden="true"><svg class="ring-svg" viewBox="-12 -12 424 424" role="presentation" focusable="false"><path class="seg walk" style="--i:0" d="M204.31 10.05A190 190 0 0 1 278.53 26.99L241.33 108.94A100 100 0 0 0 202.27 100.03Z"/><path class="seg strength" style="--i:1" d="M286.30 30.73A190 190 0 0 1 345.82 78.20L276.75 135.89A100 100 0 0 0 245.42 110.91Z"/><path class="seg rest" style="--i:2" d="M351.20 84.94A190 190 0 0 1 384.23 153.53L296.96 175.54A100 100 0 0 0 279.58 139.44Z"/><path class="seg walk" style="--i:3" d="M386.15 161.93A190 190 0 0 1 386.15 238.07L297.97 220.03A100 100 0 0 0 297.97 179.97Z"/><path class="seg strength" style="--i:4" d="M384.23 246.47A190 190 0 0 1 351.20 315.06L279.58 260.56A100 100 0 0 0 296.96 224.46Z"/><path class="seg walk" style="--i:5" d="M345.82 321.80A190 190 0 0 1 286.30 369.27L245.42 289.09A100 100 0 0 0 276.75 264.11Z"/><path class="seg rest" style="--i:6" d="M278.53 373.01A190 190 0 0 1 204.31 389.95L202.27 299.97A100 100 0 0 0 241.33 291.06Z"/><path class="seg walk" style="--i:7" d="M195.69 389.95A190 190 0 0 1 121.47 373.01L158.67 291.06A100 100 0 0 0 197.73 299.97Z"/><path class="seg strength" style="--i:8" d="M113.70 369.27A190 190 0 0 1 54.18 321.80L123.25 264.11A100 100 0 0 0 154.58 289.09Z"/><path class="seg rest" style="--i:9" d="M48.80 315.06A190 190 0 0 1 15.77 246.47L103.04 224.46A100 100 0 0 0 120.42 260.56Z"/><path class="seg walk" style="--i:10" d="M13.85 238.07A190 190 0 0 1 13.85 161.93L102.03 179.97A100 100 0 0 0 102.03 220.03Z"/><path class="seg strength" style="--i:11" d="M15.77 153.53A190 190 0 0 1 48.80 84.94L120.42 139.44A100 100 0 0 0 103.04 175.54Z"/><path class="seg walk" style="--i:12" d="M54.18 78.20A190 190 0 0 1 113.70 30.73L154.58 110.91A100 100 0 0 0 123.25 135.89Z"/><path class="seg rest" style="--i:13" d="M121.47 26.99A190 190 0 0 1 195.69 10.05L197.73 100.03A100 100 0 0 0 158.67 108.94Z"/></svg></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <p class="foot-mark">Walk, eat well, breathe and <em>reflect.</em></p>
+      <ul class="foot-links">
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="goals.html">SMART Goals</a></li>
+        <li><a href="plan.html">Fitness and Meal Plan</a></li>
+        <li><a href="task-a.html">AI Task A</a></li>
+        <li><a href="task-b.html">AI Task B</a></li>
+        <li><a href="reflection.html">Final Reflection</a></li>
+        <li><a href="reflection.html#references">References</a></li>
+      </ul>
+    </div>
+    <div class="foot-base">
+      <p>Hind Marzouq Alahbabi Health and Wellbeing Learning E-Portfolio</p>
+      <p>Interactive Learning Hub</p>
+      <a class="to-top" href="#main" aria-label="Back to top"><svg class="ic up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</footer>
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged screenshot"><button class="lb-close" type="button" aria-label="Close">&times;</button><img alt=""><p class="lb-cap"></p></dialog>
+<script src="main.js" defer></script>
+</body>
+</html>
